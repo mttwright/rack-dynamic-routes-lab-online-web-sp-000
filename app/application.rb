@@ -11,7 +11,8 @@ class Application
       item = @@items.find do |item| 
         item.name == item_name
       end
-      if item != []
+      if item
+        resp.write 
       
     else
       resp.write "Route not found"
