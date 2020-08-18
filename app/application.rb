@@ -14,7 +14,7 @@ class Application
       if item
         resp.write "#{item.price}"
       else
-        resp.write "Sorry don't have that item"
+        resp.write "Item not found"
       end
       
     else
