@@ -12,7 +12,10 @@ class Application
         item.name == item_name
       end
       if item
-        resp.write 
+        resp.write "#{item.price}"
+      else
+        resp.write "Sorry don't have that item"
+      end
       
     else
       resp.write "Route not found"
